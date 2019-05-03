@@ -1,8 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Catapult`,
+    description: `Whether you're looking to start an experiment, build a MVP, bootstrap an
+    eco-system or other innovative ideas, Catapult has the services to help
+    you build fabulous modern-day web & mobile applications with the
+    security & the reliability of the NN Cloud Infrastructure`,
+    author: `CIO/Transformation & Innovation`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
