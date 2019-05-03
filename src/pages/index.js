@@ -1,9 +1,9 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from 'react';
+import { Link } from 'gatsby';
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import Layout from '../components/layout';
+import Image from '../components/image';
+import SEO from '../components/seo';
 
 const IndexPage = () => (
   <Layout>
@@ -12,7 +12,7 @@ const IndexPage = () => (
     <p>
       Whether you're looking to start an experiment, build a MVP, bootstrap an
       eco-system or other innovative ideas, Catapult has the services to help
-      yoou build fabulous modern-day web &amp; mobile applications with the
+      you build fabulous modern-day web &amp; mobile applications with the
       security &amp; the reliability of the NN Cloud Infrastructure
     </p>
 
@@ -89,6 +89,6 @@ const IndexPage = () => (
 
     {/* <Link to="/page-2/">Go to page 2</Link> */}
   </Layout>
-)
+);
 
-export default IndexPage
+export default IndexPage;

@@ -1,11 +1,29 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
+import React from 'react';
+import { Link, StaticQuery, graphql } from 'gatsby';
+import Img from 'gatsby-image';
+
+const Logo = ({ style }) => (
+  <StaticQuery
+    query={graphql`
+      query {
+        logo: file(relativePath: { eq: "nn-logo.png" }) {
+          childImageSharp {
+            fixed(width: 196, height: 60) {
+              ...GatsbyImageSharpFixed
+            }
+          }
+        }
+      }
+    `}
+    render={data => (
+      <Img style={style} fixed={data.logo.childImageSharp.fixed} />
+    )}
+  />
+);
 
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: `rebeccapurple`,
       marginBottom: `1.45rem`,
     }}
   >
@@ -20,23 +38,18 @@ const Header = ({ siteTitle }) => (
         <Link
           to="/"
           style={{
-            color: `white`,
+            color: '#ea650d',
             textDecoration: `none`,
+            display: 'flex',
+            alignItems: 'center',
           }}
         >
+          <Logo style={{ marginRight: 24 }} />
           {siteTitle}
         </Link>
       </h1>
     </div>
   </header>
-)
+);
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
-
-export default Header
+export default Header;

@@ -5,12 +5,51 @@
  * See: https://www.gatsbyjs.org/docs/static-query/
  */
 
-import React from "react"
-import PropTypes from "prop-types"
-import { StaticQuery, graphql } from "gatsby"
+import React from 'react';
+import PropTypes from 'prop-types';
+import { StaticQuery, graphql } from 'gatsby';
 
-import Header from "./header"
-import "./layout.css"
+import { Global, css } from '@emotion/core';
+
+import Header from './header';
+import './layout.css';
+import fonts from '../fonts';
+
+const styles = css`
+  @font-face {
+    font-family: 'NN Dagny';
+    font-style: normal;
+    font-weight: bold;
+    src: local('NNDagnyDisplayWebPro'), url(${fonts.NNDagnyDisplayWebProEOT}),
+      url(${fonts.NNDagnyDisplayWebProWOFF}) format('woff');
+  }
+
+  @font-face {
+    font-family: 'NN Dagny';
+    font-style: normal;
+    font-weight: normal;
+    src: local('NNDagnyTextWeb'), url(${fonts.NNDagnyTextWebEOT}),
+      url(${fonts.NNDagnyTextWebWOFF}) format('woff');
+  }
+
+  body {
+    font-family: 'NN Dagny';
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'NN Dagny';
+    color: #ea650d;
+  }
+
+  dt {
+    color: #ea650d;
+  }
+`;
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -25,6 +64,7 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
+        <Global styles={styles} />
         <Header siteTitle={data.site.siteMetadata.title} />
         <div
           style={{
@@ -40,10 +80,10 @@ const Layout = ({ children }) => (
       </>
     )}
   />
-)
+);
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
-}
+};
 
-export default Layout
+export default Layout;
