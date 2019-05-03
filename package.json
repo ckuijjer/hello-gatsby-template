@@ -31,7 +31,8 @@
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
+    "sync-with-s3": "aws s3 sync public/ s3://landingpage-20190503115117498600000001 --delete"
   },
   "repository": {
     "type": "git",
