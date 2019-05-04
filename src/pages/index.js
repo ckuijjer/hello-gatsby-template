@@ -2,13 +2,13 @@ import React from 'react';
 import { Link } from 'gatsby';
 
 import Layout from '../components/layout';
-import Image from '../components/image';
 import SEO from '../components/seo';
+import Heading from '../components/Heading';
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <h1>Start building on Catapult today</h1>
+    <Heading component="h1">Start building on Catapult today</Heading>
     <p>
       Whether you're looking to start an experiment, build a MVP, bootstrap an
       eco-system or other innovative ideas, Catapult has the services to help
@@ -16,17 +16,17 @@ const IndexPage = () => (
       security &amp; the reliability of the NN Cloud Infrastructure
     </p>
 
-    <h2>Explore Catapult platform API's</h2>
+    <Heading component="h2">Explore Catapult platform API's</Heading>
 
-    <h2>Powering your innovation</h2>
+    <Heading component="h2">Powering your innovation</Heading>
 
-    <h3>Family Office</h3>
+    <Heading component="h3">Family Office</Heading>
 
-    <h3>Friend</h3>
+    <Heading component="h3">Friend</Heading>
 
-    <h3>Bundelz</h3>
+    <Heading component="h3">Bundelz</Heading>
 
-    <h2>Under the hood</h2>
+    <Heading component="h2">Under the hood</Heading>
     <p>
       Catapult is built upon the shoulder of giants - The NN Cloud
       Infrastructure. These are some of its fundamental building blocks. Most of
@@ -34,26 +34,26 @@ const IndexPage = () => (
     </p>
 
     <dl>
-      <dt>CI/CD pipeline</dt>
+      <Heading component="dt">CI/CD pipeline</Heading>
       <dd>Continuous deployment of your software</dd>
 
-      <dt>Project metrics</dt>
+      <Heading component="dt">Project metrics</Heading>
       <dd>Data &amp; insights on how a project is doing</dd>
 
-      <dt>Customer data / ecosystem data</dt>
+      <Heading component="dt">Customer data / ecosystem data</Heading>
       <dd>Know your customers and your ecosystem</dd>
 
-      <dt>Templates</dt>
+      <Heading component="dt">Templates</Heading>
       <dd>Web / Mobile templates to quickly help bootstrap your project</dd>
 
-      <dt>DevOps tools</dt>
+      <Heading component="dt">DevOps tools</Heading>
       <dd>Access to Azure DevOps tooling</dd>
 
-      <dt>Principes, best practices</dt>
+      <Heading component="dt">Principes, best practices</Heading>
       <dd>Knowledge base of principes &amp; best practices</dd>
     </dl>
 
-    <h2>Tell me more</h2>
+    <Heading component="h2">Tell me more</Heading>
     <p>
       Catapult places your innovation idea central and wants to assist you to
       make it a success. We think timely assistance mixed with your passion is
@@ -61,26 +61,26 @@ const IndexPage = () => (
     </p>
 
     <dl>
-      <dt>Scouting a tech partner</dt>
+      <Heading component="dt">Scouting a tech partner</Heading>
       <dd>
         Finding a good technology partner can be crucial in bringing your idea
         to life. But how to know if you have the right one? Which questions to
         ask?
       </dd>
 
-      <dt>Full-stack engineers</dt>
+      <Heading component="dt">Full-stack engineers</Heading>
       <dd>
         Are you looking for engineers to build your innovation idea? Our team of
         full-stack engineers can assist your.
       </dd>
 
-      <dt>Network of experts</dt>
+      <Heading component="dt">Network of experts</Heading>
       <dd>
         Don't know who to contact for questions on legal, data, UX, security or
         compliance. See if you can find them through our network
       </dd>
 
-      <dt>Scaling-up / architecture review</dt>
+      <Heading component="dt">Scaling-up / architecture review</Heading>
       <dd>
         Need assistance in scaling-up your innovation and wondering what
         architecture is needed?
