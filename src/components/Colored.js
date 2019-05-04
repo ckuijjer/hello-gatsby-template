@@ -5,6 +5,7 @@ const shadesOfOrange = [
   colors.nnLightOrange,
   colors.nnMediumOrange,
   colors.nnDarkOrange,
+  colors.nnMediumOrange,
 ];
 
 // x => false => [] => []
