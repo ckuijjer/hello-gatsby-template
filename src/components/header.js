@@ -1,25 +1,22 @@
 import React from 'react';
-import { Link, StaticQuery, graphql } from 'gatsby';
+import { Link, useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
-const Logo = ({ style }) => (
-  <StaticQuery
-    query={graphql`
-      query {
-        logo: file(relativePath: { eq: "nn-logo.png" }) {
-          childImageSharp {
-            fixed(width: 196, height: 60) {
-              ...GatsbyImageSharpFixed
-            }
+const Logo = ({ style }) => {
+  const data = useStaticQuery(graphql`
+    query {
+      logo: file(relativePath: { eq: "nn-logo.png" }) {
+        childImageSharp {
+          fixed(width: 196, height: 60) {
+            ...GatsbyImageSharpFixed
           }
         }
       }
-    `}
-    render={data => (
-      <Img style={style} fixed={data.logo.childImageSharp.fixed} />
-    )}
-  />
-);
+    }
+  `);
+
+  return <Img style={style} fixed={data.logo.childImageSharp.fixed} />;
+};
 
 const Header = ({ siteTitle }) => (
   <header
