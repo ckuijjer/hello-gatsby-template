@@ -1,0 +1,265 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Colored renders a single word correctly 1`] = `
+<span
+  style={
+    Object {
+      "color": "#ee7f00",
+    }
+  }
+>
+  one
+</span>
+`;
+
+exports[`Colored renders empty text correctly 1`] = `null`;
+
+exports[`Colored renders five words correctly 1`] = `
+Array [
+  <span
+    style={
+      Object {
+        "color": "#ee7f00",
+      }
+    }
+  >
+    one
+  </span>,
+  " ",
+  <span
+    style={
+      Object {
+        "color": "#ea650d",
+      }
+    }
+  >
+    two
+  </span>,
+  " ",
+  <span
+    style={
+      Object {
+        "color": "#e64415",
+      }
+    }
+  >
+    three
+  </span>,
+  " ",
+  <span
+    style={
+      Object {
+        "color": "#ea650d",
+      }
+    }
+  >
+    four
+  </span>,
+  " ",
+  <span
+    style={
+      Object {
+        "color": "#ee7f00",
+      }
+    }
+  >
+    five
+  </span>,
+]
+`;
+
+exports[`Colored renders six words correctly 1`] = `
+Array [
+  <span
+    style={
+      Object {
+        "color": "#ee7f00",
+      }
+    }
+  >
+    one two
+  </span>,
+  " ",
+  <span
+    style={
+      Object {
+        "color": "#ea650d",
+      }
+    }
+  >
+    three four
+  </span>,
+  " ",
+  <span
+    style={
+      Object {
+        "color": "#e64415",
+      }
+    }
+  >
+    five six
+  </span>,
+]
+`;
+
+exports[`Colored renders thirteen words correctly 1`] = `
+Array [
+  <span
+    style={
+      Object {
+        "color": "#ee7f00",
+      }
+    }
+  >
+    one two three
+  </span>,
+  " ",
+  <span
+    style={
+      Object {
+        "color": "#ea650d",
+      }
+    }
+  >
+    four five six
+  </span>,
+  " ",
+  <span
+    style={
+      Object {
+        "color": "#e64415",
+      }
+    }
+  >
+    seven eight nine
+  </span>,
+  " ",
+  <span
+    style={
+      Object {
+        "color": "#ea650d",
+      }
+    }
+  >
+    ten eleven twelve
+  </span>,
+  " ",
+  <span
+    style={
+      Object {
+        "color": "#ee7f00",
+      }
+    }
+  >
+    thirteen
+  </span>,
+]
+`;
+
+exports[`Colored renders twelve words correctly 1`] = `
+Array [
+  <span
+    style={
+      Object {
+        "color": "#ee7f00",
+      }
+    }
+  >
+    one two
+  </span>,
+  " ",
+  <span
+    style={
+      Object {
+        "color": "#ea650d",
+      }
+    }
+  >
+    three four
+  </span>,
+  " ",
+  <span
+    style={
+      Object {
+        "color": "#e64415",
+      }
+    }
+  >
+    five six
+  </span>,
+  " ",
+  <span
+    style={
+      Object {
+        "color": "#ea650d",
+      }
+    }
+  >
+    seven eight
+  </span>,
+  " ",
+  <span
+    style={
+      Object {
+        "color": "#ee7f00",
+      }
+    }
+  >
+    nine ten
+  </span>,
+  " ",
+  <span
+    style={
+      Object {
+        "color": "#ea650d",
+      }
+    }
+  >
+    eleven twelve
+  </span>,
+]
+`;
+
+exports[`Colored renders two sentences correctly 1`] = `
+Array [
+  <span
+    style={
+      Object {
+        "color": "#ee7f00",
+      }
+    }
+  >
+    sentence
+  </span>,
+  " ",
+  <span
+    style={
+      Object {
+        "color": "#ea650d",
+      }
+    }
+  >
+    one.
+  </span>,
+  " ",
+  <span
+    style={
+      Object {
+        "color": "#ee7f00",
+      }
+    }
+  >
+    sentence
+  </span>,
+  " ",
+  <span
+    style={
+      Object {
+        "color": "#ea650d",
+      }
+    }
+  >
+    two
+  </span>,
+]
+`;

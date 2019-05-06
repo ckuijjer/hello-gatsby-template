@@ -32,13 +32,17 @@ const splitAfter = (fn, list) => {
   return result;
 };
 
-const Colored = ({ children }) => {
-  const words = children.split(' ');
-  const wordsPerColor = Math.min(Math.floor(words.length / 6) + 1, 3);
+export const getWordsPerColor = x => (x > 12 ? 3 : x > 5 ? 2 : 1);
+
+const Colored = ({ children = '' }) => {
+  let words = children.split(' ');
+  if (words.length === 1 && words[0] === '') words = []; // no text, then make sure it'll return null
+
+  const wordsPerColor = getWordsPerColor(words.length);
 
   const sentences = splitAfter(x => x.endsWith('.'), words);
 
-  return sentences
+  const result = sentences
     .flatMap(sentence =>
       splitAfter((x, i) => (i + 1) % wordsPerColor === 0, sentence).map(
         (group, i) => (
@@ -48,7 +52,11 @@ const Colored = ({ children }) => {
         ),
       ),
     )
-    .map(x => <>{x} </>);
+    .map((value, i, arr) =>
+      i + 1 === arr.length ? <>{value}</> : <>{value} </>,
+    ); // add a space between the words
+
+  return result;
 };
 
 export default Colored;
