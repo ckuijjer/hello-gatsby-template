@@ -63,14 +63,14 @@ const IndexPage = () => (
           <Heading component="h1">Created with Catapult</Heading>
           <div>
             You just used Catapult to create and deploy the start of your
-            landingpage. Learn more about{' '}
+            landing page. Learn more about{' '}
             <a
               href="https://www.gatsbyjs.org"
               style={{ color: 'hsla(0, 0%, 0%, 0.8)' }}
             >
               Gatsby
             </a>
-            , the technology that powers this blazingly fast landingpage.
+            , the technology that powers this blazingly fast landing page.
           </div>
         </div>
       </div>
