@@ -20,9 +20,11 @@ const Logo = ({ style }) => {
 
 const Header = ({ siteTitle }) => (
   <header
-    style={{
-      marginBottom: `1.45rem`,
-    }}
+    style={
+      {
+        // marginBottom: `1.45rem`,
+      }
+    }
   >
     <div
       style={{

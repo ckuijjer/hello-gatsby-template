@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Catapult`,
+    title: ``,
     description: `Whether you're looking to start an experiment, build a MVP, bootstrap an
     eco-system or other innovative ideas, Catapult has the services to help
     you build fabulous modern-day web & mobile applications with the
