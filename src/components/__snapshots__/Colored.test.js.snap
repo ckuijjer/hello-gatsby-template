@@ -1,21 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Colored renders a single word correctly 1`] = `
-<span
-  style={
-    Object {
-      "color": "#ee7f00",
-    }
-  }
->
-  one
-</span>
-`;
-
-exports[`Colored renders empty text correctly 1`] = `null`;
-
-exports[`Colored renders five words correctly 1`] = `
-Array [
+<span>
   <span
     style={
       Object {
@@ -24,242 +10,304 @@ Array [
     }
   >
     one
-  </span>,
-  " ",
-  <span
-    style={
-      Object {
-        "color": "#ea650d",
+  </span>
+</span>
+`;
+
+exports[`Colored renders empty text correctly 1`] = `null`;
+
+exports[`Colored renders five words correctly 1`] = `
+Array [
+  <span>
+    <span
+      style={
+        Object {
+          "color": "#ee7f00",
+        }
       }
-    }
-  >
-    two
+    >
+      one
+    </span>
+     
   </span>,
-  " ",
-  <span
-    style={
-      Object {
-        "color": "#e64415",
+  <span>
+    <span
+      style={
+        Object {
+          "color": "#ea650d",
+        }
       }
-    }
-  >
-    three
+    >
+      two
+    </span>
+     
   </span>,
-  " ",
-  <span
-    style={
-      Object {
-        "color": "#ea650d",
+  <span>
+    <span
+      style={
+        Object {
+          "color": "#e64415",
+        }
       }
-    }
-  >
-    four
+    >
+      three
+    </span>
+     
   </span>,
-  " ",
-  <span
-    style={
-      Object {
-        "color": "#ee7f00",
+  <span>
+    <span
+      style={
+        Object {
+          "color": "#ea650d",
+        }
       }
-    }
-  >
-    five
+    >
+      four
+    </span>
+     
+  </span>,
+  <span>
+    <span
+      style={
+        Object {
+          "color": "#ee7f00",
+        }
+      }
+    >
+      five
+    </span>
   </span>,
 ]
 `;
 
 exports[`Colored renders six words correctly 1`] = `
 Array [
-  <span
-    style={
-      Object {
-        "color": "#ee7f00",
+  <span>
+    <span
+      style={
+        Object {
+          "color": "#ee7f00",
+        }
       }
-    }
-  >
-    one two
+    >
+      one two
+    </span>
+     
   </span>,
-  " ",
-  <span
-    style={
-      Object {
-        "color": "#ea650d",
+  <span>
+    <span
+      style={
+        Object {
+          "color": "#ea650d",
+        }
       }
-    }
-  >
-    three four
+    >
+      three four
+    </span>
+     
   </span>,
-  " ",
-  <span
-    style={
-      Object {
-        "color": "#e64415",
+  <span>
+    <span
+      style={
+        Object {
+          "color": "#e64415",
+        }
       }
-    }
-  >
-    five six
+    >
+      five six
+    </span>
   </span>,
 ]
 `;
 
 exports[`Colored renders thirteen words correctly 1`] = `
 Array [
-  <span
-    style={
-      Object {
-        "color": "#ee7f00",
+  <span>
+    <span
+      style={
+        Object {
+          "color": "#ee7f00",
+        }
       }
-    }
-  >
-    one two three
+    >
+      one two three
+    </span>
+     
   </span>,
-  " ",
-  <span
-    style={
-      Object {
-        "color": "#ea650d",
+  <span>
+    <span
+      style={
+        Object {
+          "color": "#ea650d",
+        }
       }
-    }
-  >
-    four five six
+    >
+      four five six
+    </span>
+     
   </span>,
-  " ",
-  <span
-    style={
-      Object {
-        "color": "#e64415",
+  <span>
+    <span
+      style={
+        Object {
+          "color": "#e64415",
+        }
       }
-    }
-  >
-    seven eight nine
+    >
+      seven eight nine
+    </span>
+     
   </span>,
-  " ",
-  <span
-    style={
-      Object {
-        "color": "#ea650d",
+  <span>
+    <span
+      style={
+        Object {
+          "color": "#ea650d",
+        }
       }
-    }
-  >
-    ten eleven twelve
+    >
+      ten eleven twelve
+    </span>
+     
   </span>,
-  " ",
-  <span
-    style={
-      Object {
-        "color": "#ee7f00",
+  <span>
+    <span
+      style={
+        Object {
+          "color": "#ee7f00",
+        }
       }
-    }
-  >
-    thirteen
+    >
+      thirteen
+    </span>
   </span>,
 ]
 `;
 
 exports[`Colored renders twelve words correctly 1`] = `
 Array [
-  <span
-    style={
-      Object {
-        "color": "#ee7f00",
+  <span>
+    <span
+      style={
+        Object {
+          "color": "#ee7f00",
+        }
       }
-    }
-  >
-    one two
+    >
+      one two
+    </span>
+     
   </span>,
-  " ",
-  <span
-    style={
-      Object {
-        "color": "#ea650d",
+  <span>
+    <span
+      style={
+        Object {
+          "color": "#ea650d",
+        }
       }
-    }
-  >
-    three four
+    >
+      three four
+    </span>
+     
   </span>,
-  " ",
-  <span
-    style={
-      Object {
-        "color": "#e64415",
+  <span>
+    <span
+      style={
+        Object {
+          "color": "#e64415",
+        }
       }
-    }
-  >
-    five six
+    >
+      five six
+    </span>
+     
   </span>,
-  " ",
-  <span
-    style={
-      Object {
-        "color": "#ea650d",
+  <span>
+    <span
+      style={
+        Object {
+          "color": "#ea650d",
+        }
       }
-    }
-  >
-    seven eight
+    >
+      seven eight
+    </span>
+     
   </span>,
-  " ",
-  <span
-    style={
-      Object {
-        "color": "#ee7f00",
+  <span>
+    <span
+      style={
+        Object {
+          "color": "#ee7f00",
+        }
       }
-    }
-  >
-    nine ten
+    >
+      nine ten
+    </span>
+     
   </span>,
-  " ",
-  <span
-    style={
-      Object {
-        "color": "#ea650d",
+  <span>
+    <span
+      style={
+        Object {
+          "color": "#ea650d",
+        }
       }
-    }
-  >
-    eleven twelve
+    >
+      eleven twelve
+    </span>
   </span>,
 ]
 `;
 
 exports[`Colored renders two sentences correctly 1`] = `
 Array [
-  <span
-    style={
-      Object {
-        "color": "#ee7f00",
+  <span>
+    <span
+      style={
+        Object {
+          "color": "#ee7f00",
+        }
       }
-    }
-  >
-    sentence
+    >
+      sentence
+    </span>
+     
   </span>,
-  " ",
-  <span
-    style={
-      Object {
-        "color": "#ea650d",
+  <span>
+    <span
+      style={
+        Object {
+          "color": "#ea650d",
+        }
       }
-    }
-  >
-    one.
+    >
+      one.
+    </span>
+     
   </span>,
-  " ",
-  <span
-    style={
-      Object {
-        "color": "#ee7f00",
+  <span>
+    <span
+      style={
+        Object {
+          "color": "#ee7f00",
+        }
       }
-    }
-  >
-    sentence
+    >
+      sentence
+    </span>
+     
   </span>,
-  " ",
-  <span
-    style={
-      Object {
-        "color": "#ea650d",
+  <span>
+    <span
+      style={
+        Object {
+          "color": "#ea650d",
+        }
       }
-    }
-  >
-    two
+    >
+      two
+    </span>
   </span>,
 ]
 `;
