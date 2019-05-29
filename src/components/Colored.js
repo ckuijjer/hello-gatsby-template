@@ -53,7 +53,11 @@ const Colored = ({ children = '' }) => {
       ),
     )
     .map((value, i, arr) =>
-      i + 1 === arr.length ? <>{value}</> : <>{value} </>,
+      i + 1 === arr.length ? (
+        <span key={i}>{value}</span>
+      ) : (
+        <span key={i}>{value} </span>
+      ),
     ); // add a space between the words
 
   return result;
