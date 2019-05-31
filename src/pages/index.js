@@ -13,7 +13,7 @@ const Hero = ({ children }) => (
         desktop: file(relativePath: { eq: "bg5.jpg" }) {
           childImageSharp {
             fluid(quality: 90, maxWidth: 4160) {
-              ...GatsbyImageSharpFluid_withWebp
+              ...GatsbyImageSharpFixed
             }
           }
         }
